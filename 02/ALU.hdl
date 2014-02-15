@@ -46,4 +46,109 @@ CHIP ALU {
 
     PARTS:
    // Put you code here:
+   Mux(a=x[0],b=0,sel=zx, out=x2[0]);
+   Mux(a=x[1],b=0,sel=zx, out=x2[1]);
+   Mux(a=x[2],b=0,sel=zx, out=x2[2]);
+   Mux(a=x[3],b=0,sel=zx, out=x2[3]);
+   Mux(a=x[4],b=0,sel=zx, out=x2[4]);
+   Mux(a=x[5],b=0,sel=zx, out=x2[5]);
+   Mux(a=x[6],b=0,sel=zx, out=x2[6]);
+   Mux(a=x[7],b=0,sel=zx, out=x2[7]);
+   Mux(a=x[8],b=0,sel=zx, out=x2[8]);
+   Mux(a=x[9],b=0,sel=zx, out=x2[9]);
+   Mux(a=x[10],b=0,sel=zx, out=x2[10]);
+   Mux(a=x[11],b=0,sel=zx, out=x2[11]);
+   Mux(a=x[12],b=0,sel=zx, out=x2[12]);
+   Mux(a=x[13],b=0,sel=zx, out=x2[13]);
+   Mux(a=x[14],b=0,sel=zx, out=x2[14]);
+   Mux(a=x[15],b=0,sel=zx, out=x2[15]);
+
+   Not(a=x2[0], out=notx[0]);
+   Not(a=x2[1], out=notx[1]);
+   Not(a=x2[2], out=notx[2]);
+   Not(a=x2[3], out=notx[3]);
+   Not(a=x2[4], out=notx[4]);
+   Not(a=x2[5], out=notx[5]);
+   Not(a=x2[6], out=notx[6]);
+   Not(a=x2[7], out=notx[7]);
+   Not(a=x2[8], out=notx[8]);
+   Not(a=x2[9], out=notx[9]);
+   Not(a=x2[10], out=notx[10]);
+   Not(a=x2[11], out=notx[11]);
+   Not(a=x2[12], out=notx[12]);
+   Not(a=x2[13], out=notx[13]);
+   Not(a=x2[14], out=notx[14]);
+   Not(a=x2[15], out=notx[15]);
+
+
+   Mux(a=x2[0],b=notx[0],sel=nx, out=x3[0]);
+   Mux(a=x2[1],b=notx[1],sel=nx, out=x3[1]);
+   Mux(a=x2[2],b=notx[2],sel=nx, out=x3[2]);
+   Mux(a=x2[3],b=notx[3],sel=nx, out=x3[3]);
+   Mux(a=x2[4],b=notx[4],sel=nx, out=x3[4]);
+   Mux(a=x2[5],b=notx[5],sel=nx, out=x3[5]);
+   Mux(a=x2[6],b=notx[6],sel=nx, out=x3[6]);
+   Mux(a=x2[7],b=notx[7],sel=nx, out=x3[7]);
+   Mux(a=x2[8],b=notx[8],sel=nx, out=x3[8]);
+   Mux(a=x2[9],b=notx[9],sel=nx, out=x3[9]);
+   Mux(a=x2[10],b=notx[10],sel=nx, out=x3[10]);
+   Mux(a=x2[11],b=notx[11],sel=nx, out=x3[11]);
+   Mux(a=x2[12],b=notx[12],sel=nx, out=x3[12]);
+   Mux(a=x2[13],b=notx[13],sel=nx, out=x3[13]);
+   Mux(a=x2[14],b=notx[14],sel=nx, out=x3[14]);
+   Mux(a=x2[15],b=notx[15],sel=nx, out=x3[15]);
+
+   
+   Mux(a=y[0],b=0,sel=zy, out=y2[0]);
+   Mux(a=y[1],b=0,sel=zy, out=y2[1]);
+   Mux(a=y[2],b=0,sel=zy, out=y2[2]);
+   Mux(a=y[3],b=0,sel=zy, out=y2[3]);
+   Mux(a=y[4],b=0,sel=zy, out=y2[4]);
+   Mux(a=y[5],b=0,sel=zy, out=y2[5]);
+   Mux(a=y[6],b=0,sel=zy, out=y2[6]);
+   Mux(a=y[7],b=0,sel=zy, out=y2[7]);
+   Mux(a=y[8],b=0,sel=zy, out=y2[8]);
+   Mux(a=y[9],b=0,sel=zy, out=y2[9]);
+   Mux(a=y[10],b=0,sel=zy, out=y2[10]);
+   Mux(a=y[11],b=0,sel=zy, out=y2[11]);
+   Mux(a=y[12],b=0,sel=zy, out=y2[12]);
+   Mux(a=y[13],b=0,sel=zy, out=y2[13]);
+   Mux(a=y[14],b=0,sel=zy, out=y2[14]);
+   Mux(a=y[15],b=0,sel=zy, out=y2[15]);
+
+
+   Not(a=y2[0],b=zy, out=noty[0]);
+   Not(a=y2[1],b=zy, out=noty[1]);
+   Not(a=y2[2],b=zy, out=noty[2]);
+   Not(a=y2[3],b=zy, out=noty[3]);
+   Not(a=y2[4],b=zy, out=noty[4]);
+   Not(a=y2[5],b=zy, out=noty[5]);
+   Not(a=y2[6],b=zy, out=noty[6]);
+   Not(a=y2[7],b=zy, out=noty[7]);
+   Not(a=y2[8],b=zy, out=noty[8]);
+   Not(a=y2[9],b=zy, out=noty[9]);
+   Not(a=y2[10],b=zy, out=noty[10]);
+   Not(a=y2[11],b=zy, out=noty[11]);
+   Not(a=y2[12],b=zy, out=noty[12]);
+   Not(a=y2[13],b=zy, out=noty[13]);
+   Not(a=y2[14],b=zy, out=noty[14]);
+   Not(a=y2[15],b=zy, out=noty[15]);
+
+   Mux(a=y[0],b=noty[0],sel=ny, out=y3[0]);
+   Mux(a=y[1],b=noty[1],sel=ny, out=y3[1]);
+   Mux(a=y[2],b=noty[2],sel=ny, out=y3[2]);
+   Mux(a=y[3],b=noty[3],sel=ny, out=y3[3]);
+   Mux(a=y[4],b=noty[4],sel=ny, out=y3[4]);
+   Mux(a=y[5],b=noty[5],sel=ny, out=y3[5]);
+   Mux(a=y[6],b=noty[6],sel=ny, out=y3[6]);
+   Mux(a=y[7],b=noty[7],sel=ny, out=y3[7]);
+   Mux(a=y[8],b=noty[8],sel=ny, out=y3[8]);
+   Mux(a=y[9],b=noty[9],sel=ny, out=y3[9]);
+   Mux(a=y[10],b=noty[10],sel=ny, out=y3[10]);
+   Mux(a=y[11],b=noty[11],sel=ny, out=y3[11]);
+   Mux(a=y[12],b=noty[12],sel=ny, out=y3[12]);
+   Mux(a=y[13],b=noty[13],sel=ny, out=y3[13]);
+   Mux(a=y[14],b=noty[14],sel=ny, out=y3[14]);
+   Mux(a=y[15],b=noty[15],sel=ny, out=y3[15]);
+
 }
